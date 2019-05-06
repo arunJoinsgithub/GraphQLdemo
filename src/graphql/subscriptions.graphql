@@ -1,0 +1,160 @@
+# this is an auto generated file. This will be overwritten
+subscription OnCreateBlog {
+  onCreateBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnUpdateBlog {
+  onUpdateBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnDeleteBlog {
+  onDeleteBlog {
+    id
+    name
+    posts {
+      items {
+        id
+        title
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnCreatePost {
+  onCreatePost {
+    id
+    title
+    content
+    blog {
+      id
+      name
+      posts {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnUpdatePost {
+  onUpdatePost {
+    id
+    title
+    content
+    blog {
+      id
+      name
+      posts {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnDeletePost {
+  onDeletePost {
+    id
+    title
+    content
+    blog {
+      id
+      name
+      posts {
+        nextToken
+      }
+    }
+    comments {
+      items {
+        id
+        content
+      }
+      nextToken
+    }
+  }
+}
+subscription OnCreateComment {
+  onCreateComment {
+    id
+    content
+    post {
+      id
+      title
+      content
+      blog {
+        id
+        name
+      }
+      comments {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnUpdateComment {
+  onUpdateComment {
+    id
+    content
+    post {
+      id
+      title
+      content
+      blog {
+        id
+        name
+      }
+      comments {
+        nextToken
+      }
+    }
+  }
+}
+subscription OnDeleteComment {
+  onDeleteComment {
+    id
+    content
+    post {
+      id
+      title
+      content
+      blog {
+        id
+        name
+      }
+      comments {
+        nextToken
+      }
+    }
+  }
+}
